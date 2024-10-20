@@ -1,5 +1,5 @@
 """
-WSGI config for Games_library project.
+WSGI config for games_library project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Games_library.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'games_library.settings')
 
 application = get_wsgi_application()
