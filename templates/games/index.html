@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Games Library</h1>
+  <h4><i>Library where you can find someone to play with and read some information about games and publishers</i></h4>
+  <p>We already have:</p>
+  <ul>
+    <li><strong>Games:</strong> {{ games }}</li>
+    <li><strong>Players:</strong> {{ players }}</li>
+    <li><strong>Publishers:</strong> {{ publishers }}</li>
+  </ul>
+{% endblock %}
