@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ player.username }} details</h1>
+  <p>Full name: {{ player.first_name }} {{ player.last_name }}</p>
+  <p>Last seen: {{ player.last_login }}</p>
+  {% if player.game_set %}
+  <hr>
+  <h5>Games</h5>
+  <ol>
+    {% for game in player.game_set.all %}
+      <li>
+          <a href="{% url 'games:games-detail' pk=game.id %}">{{ game.name }}</a>
+      </li>
+    {% endfor %}
+  </ol>  
+  {% else %}
+    <p><i>This person doesn't play games (yet)</i></p>
+  {% endif %}
+  
+{% endblock %}
