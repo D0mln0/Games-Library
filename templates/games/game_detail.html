@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ game.name }} details</h1>
+  <p>Release year: {{ game.year }}</p>
+  <hr>
+  <ul>
+    <li>
+      <p>
+        Publisher: 
+        <a href="{% url 'games:publishers-detail' pk=game.publishers.id %}">
+          {{ game.publishers.name }}
+        </a>
+      </p>
+    </li>
+  </ul>
+  {% if game.players %}
+  <hr>
+  <h5>Players:</h5>
+  <ol>
+    {% for player in game.players.all %}
+      <li>
+          <a href="{% url 'games:players-detail' pk=player.id %}">{{ player.username }}</a>
+      </li>
+    {% endfor %}
+  </ol>  
+  {% else %}
+    <p><i>Nobody is playing this game yet</i></p>
+  {% endif %}
+  <div class="form-inline">
+    <a href="{% url 'games:games-delete' pk=game.id %}" class="btn btn-danger link-to-page">
+      Delete
+    </a>
+
+    <a href="{% url 'games:games-update' pk=game.id %}" class="btn btn-secondary link-to-page">
+      Update
+    </a>
+  </div>
+{% endblock %}

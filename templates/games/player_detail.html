@@ -1,14 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>{{ player.username }} details</h1>
-  <p>Full name: {{ player.first_name }} {{ player.last_name }}</p>
-  <p>Last seen: {{ player.last_login }}</p>
-  {% if player.game_set %}
+  <div class="form-inline">
+    <h1>
+      {{ player.username }} details
+    </h1>
+{#      {% if player.is_authenticated %}#}
+{#        <p style="font-size: 11px">🟢</p>#}
+{#      {% else %}#}
+{#        <p style="font-size: 11px">🔴</p>#}
+{#      {% endif %}#}
+  </div>
+  
+  {% if player.first_name and player.last_name %}
+    <p>Full name: {{ player.get_full_name }}</p>
+  {% endif %}
+  {% if player.games %}
   <hr>
   <h5>Games</h5>
   <ol>
-    {% for game in player.game_set.all %}
+    {% for game in player.games.all %}
       <li>
           <a href="{% url 'games:games-detail' pk=game.id %}">{{ game.name }}</a>
       </li>
@@ -17,5 +28,13 @@
   {% else %}
     <p><i>This person doesn't play games (yet)</i></p>
   {% endif %}
-  
+  <div class="form-inline">
+    <a href="{% url 'games:players-delete' pk=player.id %}" class="btn btn-danger link-to-page">
+      Delete
+    </a>
+
+    <a href="{% url 'games:players-update' pk=player.id %}" class="btn btn-secondary link-to-page">
+      Update
+    </a>
+  </div>
 {% endblock %}

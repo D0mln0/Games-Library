@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ object|yesno:"Update,Create" }} publisher</h1>
+  <form method="post" action="" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn-btn-primary">{{ object|yesno:"Update,Create" }}</button>
+  </form>
+{% endblock %}

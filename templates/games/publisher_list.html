@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="form-inline">
+    <h1>Here we have publishers</h1>
+    <a href="{% url 'games:publishers-create' %}" class="btn btn-primary link-to-page">
+        Create
+    </a>
+  </div>
+  <form method="get" action="" class="form-inline">
+    {{ search_form.as_p }}
+    <input type="submit" value="Find" class="btn btn-primary">
+  </form>
+  {% if publisher_list %}
+    <ul>
+      {% for publisher in publisher_list %}
+        <li><a href="{% url 'games:publishers-detail' pk=publisher.id %}">{{ publisher.name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p><i>Publishers not found</i></p>
+  {% endif %}
+{% endblock %}
