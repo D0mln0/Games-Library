@@ -1,6 +1,26 @@
+
+{% if user.is_authenticated %}
+  <li class="list-group-item">
+    User: 
+    <a href="{{ user.get_absolute_url }}">
+      {{ user.get_username }}
+    </a>
+  </li>
+  <li class="list-group-item">
+    <form id="logout-form" method="post" action="{% url 'admin:logout' %}">
+      {% csrf_token %}
+      <button type="submit" style="border: none;background-color: transparent;">
+        <i class="fa fa-sign-out" style="font-size:24px;color:red"></i>
+      </button>
+    </form>
+  </li>
+{% else %}
+  <li class="list-group-item"><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+{% endif %}
+
 <ul class="sidebar-nav">
-  <li><a href="/taxi/">Home page</a></li>
-  <li><a href="/taxi/manufacturers/">Manufacturers</a></li>
-  <li><a href="/taxi/cars/">Cars</a></li>
-  <li><a href="/taxi/drivers/">Drivers</a></li>
+  <li><a href="/games/">Home page</a></li>
+  <li><a href="/games/publishers/">Publishers</a></li>
+  <li><a href="/games/games/">Games</a></li>
+  <li><a href="/games/players/">Players</a></li>
 </ul>

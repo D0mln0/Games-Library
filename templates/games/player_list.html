@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Here we have players</h1>
+  {% if player_list %}
+    <ul>
+      {% for player in player_list %}
+        <li><a href="{% url 'games:players-detail' pk=player.id %}">{{ player.username }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p><i>Players not found</i></p>
+  {% endif %}
+{% endblock %}
