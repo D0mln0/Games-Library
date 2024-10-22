@@ -8,6 +8,9 @@ class Publisher(models.Model):
     name = models.CharField(max_length=255)
     info = models.TextField(null=True, blank=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Game(models.Model):
     name = models.CharField(max_length=255)
@@ -21,8 +24,14 @@ class Game(models.Model):
         related_name="games"
     )
 
+    def __str__(self):
+        return f"{self.publishers}: {self.name}"
+
 
 class Player(AbstractUser):
+
+    def __str__(self):
+        return self.username
 
     def get_absolute_url(self):
         return reverse("games:players-detail", kwargs={"pk": self.pk})
