@@ -1,114 +1,58 @@
 [
   {
     "model": "games.publisher",
-    "pk": 1,
-    "fields": {
-      "name": "Lincoln",
-      "country": "USA"
-    }
-  },
-  {
-    "model": "games.publisher",
-    "pk": 2,
-    "fields": {
-      "name": "Ford Motor Company",
-      "country": "USA"
-    }
-  },
-  {
-    "model": "games.publisher",
-    "pk": 3,
-    "fields": {
-      "name": "General Motors",
-      "country": "USA"
-    }
-  },
-  {
-    "model": "games.publisher",
-    "pk": 4,
-    "fields": {
-      "name": "Toyota",
-      "country": "Japan"
-    }
-  },
-  {
-    "model": "games.publisher",
     "pk": 5,
     "fields": {
-      "name": "Suzuki",
-      "country": "Japan"
+      "name": "Larian Studios",
+      "info": "Belgian independent video game developer and publisher founded in 1996 by Swen Vincke."
     }
   },
   {
     "model": "games.publisher",
     "pk": 6,
     "fields": {
-      "name": "Mitsubishi",
-      "country": "Japan"
+      "name": "Rockstar Games",
+      "info": "American video game publisher based in New York City."
     }
   },
   {
     "model": "games.publisher",
     "pk": 7,
     "fields": {
-      "name": "Volkswagen",
-      "country": "Germany"
+      "name": "CD Projekt",
+      "info": "Polish video game developer, publisher and distributor based in Warsaw, founded in May 1994 by Marcin Iwiński and Michał Kiciński."
     }
   },
   {
     "model": "games.publisher",
     "pk": 8,
     "fields": {
-      "name": "Daimler",
-      "country": "Germany"
+      "name": "GSC Game World",
+      "info": "Ukrainian video game developer temporarily based in Prague."
     }
   },
   {
     "model": "games.publisher",
     "pk": 9,
     "fields": {
-      "name": "FCA",
-      "country": "Italy"
+      "name": "4A Games",
+      "info": "Ukrainian-Maltese video game developer based in Sliema, Malta."
     }
   },
   {
     "model": "games.publisher",
     "pk": 10,
     "fields": {
-      "name": "Renault",
-      "country": "France"
+      "name": "Wargaming",
+      "info": "Global video game company headquartered in Nicosia, Cyprus."
     }
   },
   {
     "model": "games.publisher",
     "pk": 11,
     "fields": {
-      "name": "SAIC",
-      "country": "China"
-    }
-  },
-  {
-    "model": "games.publisher",
-    "pk": 12,
-    "fields": {
-      "name": "Mazda",
-      "country": "Japan"
-    }
-  },
-  {
-    "model": "games.publisher",
-    "pk": 13,
-    "fields": {
-      "name": "BAIC",
-      "country": "China"
-    }
-  },
-  {
-    "model": "games.publisher",
-    "pk": 14,
-    "fields": {
-      "name": "BMW",
-      "country": "Germany"
+      "name": "Valve Corporation",
+      "info": "American video game developer, publisher, and digital distribution company headquartered in Bellevue, Washington."
     }
   },
   {
@@ -121,11 +65,10 @@
       "username": "admin.user",
       "first_name": "Admin",
       "last_name": "User",
-      "email": "admin.user@taxi.com",
+      "email": "admin.user@game.com",
       "is_staff": true,
       "is_active": true,
       "date_joined": "2022-08-08T13:58:29Z",
-      "license_number": "ADM56984",
       "groups": [],
       "user_permissions": []
     }
@@ -144,7 +87,7 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-08T14:17:04Z",
-      "license_number": "JOY26458",
+      
       "groups": [],
       "user_permissions": []
     }
@@ -163,7 +106,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-08T14:19:09Z",
-      "license_number": "JIM26531",
       "groups": [],
       "user_permissions": []
     }
@@ -182,7 +124,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-08T14:19:09Z",
-      "license_number": "JON26231",
       "groups": [],
       "user_permissions": []
     }
@@ -201,7 +142,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "DUS25131",
       "groups": [],
       "user_permissions": []
     }
@@ -220,7 +160,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "MIK25131",
       "groups": [],
       "user_permissions": []
     }
@@ -239,7 +178,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "LUK35131",
       "groups": [],
       "user_permissions": []
     }
@@ -258,7 +196,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "NAN34131",
       "groups": [],
       "user_permissions": []
     }
@@ -277,7 +214,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "MAR34231",
       "groups": [],
       "user_permissions": []
     }
@@ -296,7 +232,6 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "BIL39231",
       "groups": [],
       "user_permissions": []
     }
@@ -315,29 +250,30 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-08-09T14:19:09Z",
-      "license_number": "BOB09631",
       "groups": [],
       "user_permissions": []
     }
   },
   {
     "model": "games.game",
-    "pk": 1,
+    "pk": 5,
     "fields": {
-      "model": "Lincoln Continental",
-      "manufacturer": 1,
-      "drivers": [
+      "name": "Battlefield V",
+      "year": 2018,
+      "publishers": 3,
+      "players": [
         3
       ]
     }
   },
   {
     "model": "games.game",
-    "pk": 2,
+    "pk": 6,
     "fields": {
-      "model": "Toyota Yaris",
-      "manufacturer": 4,
-      "drivers": [
+      "name": "World of Warcraft",
+      "year": 2004,
+      "publishers": 2,
+      "players": [
         2,
         3
       ]
@@ -345,11 +281,12 @@
   },
   {
     "model": "games.game",
-    "pk": 3,
+    "pk": 7,
     "fields": {
-      "model": "Suzuki Vitara",
-      "manufacturer": 5,
-      "drivers": [
+      "name": "Genshin Impact",
+      "year": 2020,
+      "publishers": 4,
+      "players": [
         1,
         2,
         5
@@ -358,55 +295,13 @@
   },
   {
     "model": "games.game",
-    "pk": 4,
-    "fields": {
-      "model": "Mitsubishi Eclipse",
-      "manufacturer": 6,
-      "drivers": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "games.game",
-    "pk": 5,
-    "fields": {
-      "model": "Mitsubishi Lancer",
-      "manufacturer": 6,
-      "drivers": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "games.game",
-    "pk": 6,
-    "fields": {
-      "model": "Ford Focus",
-      "manufacturer": 2,
-      "drivers": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "games.game",
-    "pk": 7,
-    "fields": {
-      "model": "Cadillac Escalade",
-      "manufacturer": 3,
-      "drivers": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "games.game",
     "pk": 8,
     "fields": {
-      "model": "Arcfox Alpha-S",
-      "manufacturer": 13,
-      "drivers": [
+      "name": "The Witcher Wild Hunt",
+      "year": 2015,
+      "publishers": 7,
+      "players": [
+        1
       ]
     }
   },
@@ -414,10 +309,11 @@
     "model": "games.game",
     "pk": 9,
     "fields": {
-      "model": "Beijing EX5",
-      "manufacturer": 13,
-      "drivers": [
-        9
+      "name": "World of Tanks",
+      "year": 2010,
+      "publishers": 10,
+      "players": [
+        11
       ]
     }
   },
@@ -425,10 +321,11 @@
     "model": "games.game",
     "pk": 10,
     "fields": {
-      "model": "MG 5 II",
-      "manufacturer": 11,
-      "drivers": [
-        8
+      "name": "Portal",
+      "year": 2007,
+      "publishers": 11,
+      "players": [
+        4
       ]
     }
   },
@@ -436,11 +333,11 @@
     "model": "games.game",
     "pk": 11,
     "fields": {
-      "model": "Rising Auto ER6",
-      "manufacturer": 11,
-      "drivers": [
-        7,
-        3
+      "name": "Portal 2",
+      "year": 2011,
+      "publishers": 11,
+      "players": [
+        5
       ]
     }
   },
@@ -448,10 +345,10 @@
     "model": "games.game",
     "pk": 12,
     "fields": {
-      "model": "SP250",
-      "manufacturer": 8,
-      "drivers": [
-        6
+      "name": "Team Fortress 2",
+      "year": 2007,
+      "publishers": 11,
+      "players": [
       ]
     }
   },
@@ -459,11 +356,11 @@
     "model": "games.game",
     "pk": 13,
     "fields": {
-      "model": "Daimler Sovereign",
-      "manufacturer": 8,
-      "drivers": [
-        11,
-        7
+      "name": "Baldur's Gate 3",
+      "year": 2023,
+      "publishers": 5,
+      "players": [
+        9
       ]
     }
   },
@@ -471,10 +368,11 @@
     "model": "games.game",
     "pk": 14,
     "fields": {
-      "model": "X5 M",
-      "manufacturer": 14,
-      "drivers": [
-        10
+      "name": "Grand Theft Auto V",
+      "year": 2013,
+      "publishers": 6,
+      "players": [
+        8
       ]
     }
   },
@@ -482,10 +380,12 @@
     "model": "games.game",
     "pk": 15,
     "fields": {
-      "model": "Floride",
-      "manufacturer": 10,
-      "drivers": [
-        9
+      "name": "Cyberpunk 2077",
+      "year": 2020,
+      "publishers": 7,
+      "players": [
+        7,
+        3
       ]
     }
   },
@@ -493,10 +393,75 @@
     "model": "games.game",
     "pk": 16,
     "fields": {
-      "model": "MX-30",
-      "manufacturer": 12,
-      "drivers": [
+      "name": "Red Dead Redemption 2",
+      "year": 2018,
+      "publishers": 6,
+      "players": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 17,
+    "fields": {
+      "name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+      "year": 2007,
+      "publishers": 8,
+      "players": [
+        11,
+        7
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 18,
+    "fields": {
+      "name": "Metro 2033",
+      "year": 2010,
+      "publishers": 9,
+      "players": [
+        10
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 19,
+    "fields": {
+      "name": "Metro: Last Light",
+      "year": 2013,
+      "publishers": 9,
+      "players": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 20,
+    "fields": {
+      "name": "Metro Exodus",
+      "year": 2019,
+      "publishers": 9,
+      "players": [
         4
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 21,
+    "fields": {
+      "name": "For Honor",
+      "year": 2016,
+      "publishers": 1,
+      "players": [
+        5,
+        7,
+        1,
+        2
       ]
     }
   }

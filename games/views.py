@@ -21,7 +21,7 @@ def index(request: HttpRequest) -> HttpResponse:
 
 class PublisherListView(LoginRequiredMixin, ListView):
     model = Publisher
-    paginate_by = 10
+    paginate_by = 5
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(PublisherListView, self).get_context_data(**kwargs)
@@ -62,7 +62,7 @@ class PublisherDeleteView(LoginRequiredMixin, DeleteView):
 
 class GameListView(LoginRequiredMixin, ListView):
     model = Game
-    paginate_by = 10
+    paginate_by = 5
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(GameListView, self).get_context_data(**kwargs)
@@ -105,7 +105,7 @@ class GameDeleteView(LoginRequiredMixin, DeleteView):
 
 class PlayerListView(LoginRequiredMixin, ListView):
     model = Player
-    paginate_by = 10
+    paginate_by = 5
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(PlayerListView, self).get_context_data(**kwargs)
