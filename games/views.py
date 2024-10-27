@@ -1,4 +1,4 @@
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -9,7 +9,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 
 
-# @login_required
 def index(request: HttpRequest) -> HttpResponse:
     context = {
         "games": Game.objects.count(),
@@ -144,3 +143,15 @@ class PlayerUpdateView(LoginRequiredMixin, UpdateView):
 class PlayerDeleteView(LoginRequiredMixin, DeleteView):
     model = Player
     success_url = reverse_lazy("games:players-list")
+
+
+@login_required
+def toggle_assign_to_game(request, pk):
+    player = Player.objects.get(id=request.user.id)
+    if (
+        Game.objects.get(id=pk) in player.games.all()
+    ):  # probably could check if car exists
+        player.games.remove(pk)
+    else:
+        player.games.add(pk)
+    return HttpResponseRedirect(reverse_lazy("games:games-detail", args=[pk]))
