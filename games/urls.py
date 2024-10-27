@@ -17,6 +17,7 @@ from games.views import (
     PlayerCreateView,
     PlayerUpdateView,
     PlayerDeleteView,
+    toggle_assign_to_game
 )
 
 app_name = "games"
@@ -34,6 +35,7 @@ urlpatterns = [
     path("games/create/", GameCreateView.as_view(), name="games-create"),
     path("games/update/<int:pk>/", GameUpdateView.as_view(), name="games-update"),
     path("games/delete/<int:pk>/", GameDeleteView.as_view(), name="games-delete"),
+    path("games/<int:pk>/toggle-assign/", toggle_assign_to_game, name="toggle-game-assign"),
 
     path("players/", PlayerListView.as_view(), name="players-list"),
     path("players/<int:pk>/", PlayerDetailView.as_view(), name="players-detail"),

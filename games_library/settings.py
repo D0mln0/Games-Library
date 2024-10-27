@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "bootstrap5",
+    "crispy_forms",
+    "crispy_bootstrap5",
     "games",
 ]
 
@@ -134,3 +137,6 @@ AUTH_USER_MODEL = "games.Player"
 
 LOGIN_REDIRECT_URL = "/games/"
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"

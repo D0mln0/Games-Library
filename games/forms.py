@@ -16,6 +16,12 @@ class GameForm(forms.ModelForm):
         model = Game
         fields = "__all__"
 
+    def clean_year(self):
+        year = self.cleaned_data["year"]
+        if year < 1958:
+            raise ValidationError("The first game ever was created in 1958, so year of your game must be at least 1958")
+        return year
+
 
 class PlayerForm(UserCreationForm):
     class Meta:
