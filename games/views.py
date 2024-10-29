@@ -126,7 +126,7 @@ class PlayerDetailView(LoginRequiredMixin, DetailView):
     queryset = Player.objects.prefetch_related("games__publishers")
 
 
-class PlayerCreateView(LoginRequiredMixin, CreateView):
+class PlayerCreateView(CreateView):
     model = Player
     form_class = PlayerForm
     template_name = "games/player_form.html"

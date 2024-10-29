@@ -19,8 +19,8 @@
 {% endif %}
 
 <ul class="sidebar-nav">
-  <li class="list-group-item"><a href="/games/">Home page</a></li>
-  <li class="list-group-item"><a href="/games/publishers/">Publishers</a></li>
-  <li class="list-group-item"><a href="/games/games/">Games</a></li>
-  <li class="list-group-item"><a href="/games/players/">Players</a></li>
+  <li class="list-group-item"><a href="{% url 'games:index' %}">Home page</a></li>
+  <li class="list-group-item"><a href="{% url 'games:publishers-list' %}">Publishers</a></li>
+  <li class="list-group-item"><a href="{% url 'games:games-list' %}">Games</a></li>
+  <li class="list-group-item"><a href="{% url 'games:players-list' %}">Players</a></li>
 </ul>
