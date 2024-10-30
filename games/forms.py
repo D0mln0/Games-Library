@@ -27,6 +27,7 @@ class PlayerForm(UserCreationForm):
     class Meta:
         model = Player
         fields = UserCreationForm.Meta.fields + (
+            "email",
             "first_name",
             "last_name",
         )

@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("games/", include("games.urls", namespace="games")),
+    path("", include("games.urls", namespace="games")),
     path("accounts/", include("django.contrib.auth.urls")),
 ] + static(
     settings.STATIC_URL,
