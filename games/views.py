@@ -150,7 +150,7 @@ def toggle_assign_to_game(request, pk):
     player = Player.objects.get(id=request.user.id)
     if (
         Game.objects.get(id=pk) in player.games.all()
-    ):  # probably could check if car exists
+    ):
         player.games.remove(pk)
     else:
         player.games.add(pk)
