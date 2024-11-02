@@ -1,7 +1,7 @@
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, View
 
 from games.forms import GameForm, PlayerForm, PublisherSearchForm, GameSearchForm, PlayerSearchForm
 from games.models import Game, Player, Publisher
@@ -145,13 +145,13 @@ class PlayerDeleteView(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy("games:players-list")
 
 
-@login_required
-def toggle_assign_to_game(request, pk):
-    player = Player.objects.get(id=request.user.id)
-    if (
-        Game.objects.get(id=pk) in player.games.all()
-    ):  # probably could check if car exists
-        player.games.remove(pk)
-    else:
-        player.games.add(pk)
-    return HttpResponseRedirect(reverse_lazy("games:games-detail", args=[pk]))
+class ToggleAssignGame(View):
+    model = Game
+
+    def post(self, request: HttpRequest, pk: int, *args, **kwargs) -> HttpResponse:
+        player = Player.objects.get(id=request.user.id)
+        if self.model.objects.get(id=pk) in player.games.all():
+            player.games.remove(pk)
+        else:
+            player.games.add(pk)
+        return HttpResponseRedirect(reverse_lazy("games:games-detail", kwargs={"pk": pk}))
