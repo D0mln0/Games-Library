@@ -29,15 +29,19 @@
       {% if game.players %}
       <hr>
       <h5>Players:</h5>
-        {% if game in user.games.all %}
-          <a href="{% url 'games:toggle-game-assign' pk=game.id %}" class="btn btn-danger link-to-page">
-            I don`t play this game anymore
-          </a>
-        {% else %}
-          <a href="{% url 'games:toggle-game-assign' pk=game.id %}" class="btn btn-success link-to-page">
-            I play this game too
-          </a>
-        {% endif %}
+        <form action="/games/{{ game.id }}/toggle-assign/" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+          {% if game in user.games.all %}
+            <button type="submit" class="btn btn-danger link-to-page">
+                I don`t play this game anymore
+            </button>
+          {% else %}
+            <button type="submit" class="btn btn-success link-to-page">
+                I play this game too
+            </button>
+          {% endif %}
+        </form>
       <ol>
         {% for player in game.players.all %}
           <li>
