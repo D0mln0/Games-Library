@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", default="django-insecure-%&ft#ce^oi7kxttkx=s+!i)n=g49weqytfinrdgs)poi2z#n+t")
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 
 INTERNAL_IPS = [
