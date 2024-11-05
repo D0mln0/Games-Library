@@ -1,0 +1,575 @@
+[
+{
+    "model": "games.publisher",
+    "pk": 1,
+    "fields": {
+        "name": "Ubisoft",
+        "info": "Small indie game studio"
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 2,
+    "fields": {
+        "name": "Blizzard",
+        "info": "Blizzard Entertainment, Inc. is an American video game developer and publisher based in Irvine, California."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 3,
+    "fields": {
+        "name": "DICE",
+        "info": "Swedish video game developer based in Stockholm."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 4,
+    "fields": {
+        "name": "MiHoYo",
+        "info": "Chinese video game development and publishing company."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 5,
+    "fields": {
+        "name": "Larian Studios",
+        "info": "Belgian independent video game developer and publisher founded in 1996 by Swen Vincke."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 6,
+    "fields": {
+        "name": "Rockstar Games",
+        "info": "American video game publisher based in New York City."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 7,
+    "fields": {
+        "name": "CD Projekt",
+        "info": "Polish video game developer, publisher and distributor based in Warsaw, founded in May 1994 by Marcin Iwiński and Michał Kiciński."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 8,
+    "fields": {
+        "name": "GSC Game World",
+        "info": "Ukrainian video game developer temporarily based in Prague."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 9,
+    "fields": {
+        "name": "4A Games",
+        "info": "Ukrainian-Maltese video game developer based in Sliema, Malta."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 10,
+    "fields": {
+        "name": "Wargaming",
+        "info": "Global video game company headquartered in Nicosia, Cyprus."
+    }
+},
+{
+    "model": "games.publisher",
+    "pk": 11,
+    "fields": {
+        "name": "Valve Corporation",
+        "info": "American video game developer, publisher, and digital distribution company headquartered in Bellevue, Washington."
+    }
+},
+{
+    "model": "games.game",
+    "pk": 1,
+    "fields": {
+        "name": "Rainbow six siege",
+        "year": 2015,
+        "publishers": 1,
+        "players": [
+            12
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 2,
+    "fields": {
+        "name": "Overwatch 2",
+        "year": 2022,
+        "publishers": 2,
+        "players": []
+    }
+},
+{
+    "model": "games.game",
+    "pk": 3,
+    "fields": {
+        "name": "Battlefield 2042",
+        "year": 2021,
+        "publishers": 3,
+        "players": []
+    }
+},
+{
+    "model": "games.game",
+    "pk": 4,
+    "fields": {
+        "name": "Zenless Zone Zero",
+        "year": 2024,
+        "publishers": 4,
+        "players": [
+            12
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 5,
+    "fields": {
+        "name": "Battlefield V",
+        "year": 2018,
+        "publishers": 3,
+        "players": [
+            3
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 6,
+    "fields": {
+        "name": "World of Warcraft",
+        "year": 2004,
+        "publishers": 2,
+        "players": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 7,
+    "fields": {
+        "name": "Genshin Impact",
+        "year": 2020,
+        "publishers": 4,
+        "players": [
+            2,
+            5
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 8,
+    "fields": {
+        "name": "The Witcher Wild Hunt",
+        "year": 2015,
+        "publishers": 7,
+        "players": []
+    }
+},
+{
+    "model": "games.game",
+    "pk": 9,
+    "fields": {
+        "name": "World of Tanks",
+        "year": 2010,
+        "publishers": 10,
+        "players": [
+            11
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 10,
+    "fields": {
+        "name": "Portal",
+        "year": 2007,
+        "publishers": 11,
+        "players": [
+            4
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 11,
+    "fields": {
+        "name": "Portal 2",
+        "year": 2011,
+        "publishers": 11,
+        "players": [
+            5
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 12,
+    "fields": {
+        "name": "Team Fortress 2",
+        "year": 2007,
+        "publishers": 11,
+        "players": []
+    }
+},
+{
+    "model": "games.game",
+    "pk": 13,
+    "fields": {
+        "name": "Baldur's Gate 3",
+        "year": 2023,
+        "publishers": 5,
+        "players": [
+            9
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 14,
+    "fields": {
+        "name": "Grand Theft Auto V",
+        "year": 2013,
+        "publishers": 6,
+        "players": [
+            8
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 15,
+    "fields": {
+        "name": "Cyberpunk 2077",
+        "year": 2020,
+        "publishers": 7,
+        "players": [
+            3,
+            7
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 16,
+    "fields": {
+        "name": "Red Dead Redemption 2",
+        "year": 2018,
+        "publishers": 6,
+        "players": [
+            6
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 17,
+    "fields": {
+        "name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+        "year": 2007,
+        "publishers": 8,
+        "players": [
+            7,
+            11
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 18,
+    "fields": {
+        "name": "Metro 2033",
+        "year": 2010,
+        "publishers": 9,
+        "players": [
+            10
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 19,
+    "fields": {
+        "name": "Metro: Last Light",
+        "year": 2013,
+        "publishers": 9,
+        "players": [
+            9
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 20,
+    "fields": {
+        "name": "Metro Exodus",
+        "year": 2019,
+        "publishers": 9,
+        "players": [
+            4
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 21,
+    "fields": {
+        "name": "For Honor",
+        "year": 2016,
+        "publishers": 1,
+        "players": [
+            2,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "games.game",
+    "pk": 22,
+    "fields": {
+        "name": "Assassin's Creed IV: Black Flag",
+        "year": 2013,
+        "publishers": 1,
+        "players": [
+            2,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    }
+},
+{
+    "model": "games.player",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$73Z1Y57bcoscZ37s9rE9v0$4SEQ0TtXwJKzO5/CRdFSrTifatiPjkZ38gM2H8Kqsdg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "joyce.byers",
+        "first_name": "Joyce",
+        "last_name": "Byers",
+        "email": "joyce.byers@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-08T14:17:04Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$QtPol3T7x9quBj4BnbnVwW$UwT4kihkRfSvQEWEeuqVKwMgis2ikKVZfJDBcQMvOKY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jim.hopper",
+        "first_name": "Jim",
+        "last_name": "Hopper",
+        "email": "jim.hopper@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-08T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l1$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jonathan.byers",
+        "first_name": "Jonathan",
+        "last_name": "Byers",
+        "email": "jonathan.byers@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-08T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l1$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "dustin.henderson",
+        "first_name": "Dustin",
+        "last_name": "Henderson",
+        "email": "dustin.henderson@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mike.wheeler",
+        "first_name": "Mike",
+        "last_name": "Wheeler",
+        "email": "mike.wheeler@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "lucas.sinclair",
+        "first_name": "Lucas",
+        "last_name": "Sinclair",
+        "email": "lucas.sinclair@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "nancy.wheeler",
+        "first_name": "Nancy",
+        "last_name": "Wheeler",
+        "email": "nancy.wheeler@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "martin.brenner",
+        "first_name": "Martin",
+        "last_name": "Brenner",
+        "email": "martin.brenner@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "billy.hargrove",
+        "first_name": "Billy",
+        "last_name": "Hargrove",
+        "email": "billy.hargrove@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "bob.newby",
+        "first_name": "Bob",
+        "last_name": "Newby",
+        "email": "bob.newby@taxi.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-09T14:19:09Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$G9xpbjg5yOtKCN1wIr3M68$H14gUkSmSm7FdRjrLkb+wj+9PyXbeQzhxF/8d1kfNoM=",
+        "last_login": "2024-11-05T12:33:49.677Z",
+        "is_superuser": true,
+        "username": "Doro",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@admin.doro",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-23T12:51:56.916Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "games.player",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$qJ0fQa9e42pQOofv6Hr1rW$zK6fErpcInwIxmJx8Y7ElRG405IUCpPAagcTf6lPYLA=",
+        "last_login": "2024-11-05T12:44:06.563Z",
+        "is_superuser": false,
+        "username": "SFG",
+        "first_name": "Tom",
+        "last_name": "Riddle",
+        "email": "doro@test.noad",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-11-05T12:30:10.308Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
